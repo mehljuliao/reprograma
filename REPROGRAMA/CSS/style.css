@@ -14,33 +14,31 @@ html {
 }
 
 /* LAYOUT */
+.banner{
+  background-image: url(../IMG/banner-site.png);
+  background-size: cover;    
+  background-repeat: no-repeat;
+  height: 560px;
+  display: flex;
+}
+
+.banner_titulo{
+    font-family: 'Yellowtail', cursive;
+    text-align: right;
+    color:white;
+    padding-top: 250px;
+    width: 1200px;
+    font-size: 60px;
+}
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
     margin-top: 10rem;
 }
 
-h1{
-    font-size: 3em;
-}
-
 h3 {
     font-size: 2.5rem;
-}
-
-p {
-    font-size: 2.0rem;
-}
-
-.banner{
-  background-image: url(../IMG/banner-porto.jpeg);
-  background-size: cover;    
-  background-repeat: no-repeat;
-  height: 560px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
 }
 
 a {
@@ -55,26 +53,21 @@ a {
     font-weight: bold;
 }
 
-.btn-branco{
-    color: #7E459B;
-    background-color: white;
-}
-
 .btn-roxo {
-    color: #7E459B;
-    border: 1px solid #7E459B;
+    color: #f87c7c;
+    border: 1px solid #f87c7c;
 }
 
 /* SEÇÃO SOBRE */
-
 .sobre{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 40px;
 }
 
 .sobre__titulo {
     font-size: 4rem;
-    color: #C4C4C4;
+    color: #f87c7c;
 }
 
 .sobre-descricao, .sobre-habilidades {
@@ -83,12 +76,21 @@ a {
     line-height: 1.5;
 }
 
+.sobre-habilidades {
+    margin-left: 10rem;
+}
+
 .sobre-descricao__destaque, .sobre-habilidades__titulo {
     font-size: 2rem;
 }
 
-.sobre-habilidades {
-    margin-left: 10rem;
+.sobre-habilidades__titulo{
+    color: #f87c7c;
+}
+
+.sobre-descricao__texto{
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .sobre-habilidades__lista {
@@ -97,10 +99,16 @@ a {
     font-size: 2rem;
 }
 
-.redes-sociais_link{
+
+/* REDES SOCIAIS */
+.redes-sociais{
+    background-color: #f87c7c;
+    margin-top: 100px;
+}
+
+.redes-sociais_link {
     display: inline-block;
     width: 20%;
-    background-color: #7E459B;
     padding-left: 2rem 0;
     margin: 0 1 rem;
     text-align: center;
@@ -108,7 +116,27 @@ a {
     align-items: center;
 }
 
-.redes-sociais_img, .redes-sociais_titulo{
+.redes-sociais_icones{
+    align-items: center;
+    text-align: center;
+}
+
+.redes-sociais_img{
     margin-bottom: .5rem;
     padding-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.nome{
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f39694;
+    padding: 5px 0;
+    color: white;
+    font-size: 15px;
+    text-align: center;
 }
